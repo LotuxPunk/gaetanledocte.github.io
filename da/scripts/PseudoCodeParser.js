@@ -22,7 +22,8 @@ var PseudoCodeParser = function(ownValues) {
         { pattern: /->/g, replacement: "→" },
         { pattern: /=>/g, replacement: "⇒" },
         { pattern: /sqrt\^/g, replacement: "√" },
-        { pattern: /&&/g, replacement: "AND" }
+        { pattern: /&&/g, replacement: "AND" },
+        { pattern: /\|\|/g, replacement: "OR" }
         
     ];
 

@@ -26,13 +26,13 @@ window.addEventListener("load", function() {
     drawDiagram();
 });
 
-//CTRL + S
 document.addEventListener("keydown", function(event) {
+    //CTRL + S
     if ((window.navigator.platform.match("Mac") ? event.metaKey : event.ctrlKey)  && event.keyCode == 83) {
-      event.preventDefault();
-      saveContentToCache();
+        event.preventDefault();
+        saveContentToCache();
     }
-  }, false);
+}, false);
 
 input.addEventListener("keyup", function() {
     if (liveReload && inputValue !== input.value) {
